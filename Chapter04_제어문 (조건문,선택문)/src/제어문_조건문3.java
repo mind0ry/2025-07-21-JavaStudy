@@ -30,9 +30,15 @@ public class 제어문_조건문3 {
 			System.out.printf("%d %c %d = %d\n",
 					num1, op, num2 , num1 * num2);
 		}
+		/*
+		 * 	=> 정수/정수 = 정수
+		 * 	=> 정수/실수 = 실수 (소수점)
+		 * 	=> 0으로 나눌 수 없다
+		 * 		=> 나누는 값을 체크 => 0인 경우 조건을 제시
+		 */
 		if (op == '/') {
 			if (num2 == 0) {
-				System.out.println("오류입니다.");
+				System.out.println("0으로 나눌 수 없습니다");
 			} else {
 				System.out.printf("%d %c %d = %.2f\n",
 						num1, op, num2 , num1 / (double)num2);
