@@ -65,16 +65,14 @@ public class 문제풀이 {
 //		System.out.println("3의배수 개수:"+total2);
 //		
 //		
-		
-		for (int i = 1; i <= 5; i++) {
-			char c = 'A';
-			for (int j = 1; j <= 5; j++) {
-				
-				System.out.print(c);
-			}
-			c++;
-			System.out.println();
-		}
+//		char c = 'A';
+//		for (int i = 1; i <= 5; i++) {
+//			for (int j = 1; j <= 5; j++) {
+//				System.out.print(c);
+//			}
+//			c++;
+//			System.out.println();
+//		}
 		
 	}
 }
