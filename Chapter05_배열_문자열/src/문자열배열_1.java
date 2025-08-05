@@ -162,5 +162,4 @@ public class 문자열배열_1 {
 		bb=tt;
 		System.out.println(aa+"|"+bb);
 	}
-
 }

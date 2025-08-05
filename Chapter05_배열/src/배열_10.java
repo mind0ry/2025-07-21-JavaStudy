@@ -1,4 +1,4 @@
-// 예약일
+ // 예약일
 public class 배열_10 {
 
 	public static void main(String[] args) {
@@ -25,6 +25,8 @@ public class 배열_10 {
 		for(int i:lotto) {
 			System.out.print(i+" ");
 		}
+		
+	
 	}
 
 }
