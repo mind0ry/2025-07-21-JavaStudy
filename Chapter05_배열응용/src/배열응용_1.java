@@ -16,7 +16,7 @@ public class 배열응용_1 {
 		}
 		
 		fr.close();
-		movie=sb.toString();
+		movie=sb.toString(); 
 		//System.out.println(movie);
 		
 		String[] mnos=new String[1938];
