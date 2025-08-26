@@ -15,7 +15,7 @@ package com.sist.collection;
  * 			System.out.println()
  * 		------------------------------ java.lang
  * 		java.text
- * 			SimpleDateFormat
+ * 			SimpleDataFormat
  * 			MessageFormat
  * 			DecimalFormat
  * 		--------------------- format()
