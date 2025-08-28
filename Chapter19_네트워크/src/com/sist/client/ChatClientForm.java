@@ -49,7 +49,7 @@ public class ChatClientForm extends JFrame implements ActionListener, Runnable {
 		if(e.getSource()==b1) {
 			name=JOptionPane.showInputDialog("이름 입력:");
 			try {
-				s=new Socket("192.168.0.39",4418);
+				s=new Socket("192.168.0.33",4418);
 				out=s.getOutputStream();
 				in=new BufferedReader(new InputStreamReader(s.getInputStream()));
 			} catch (Exception ex) {}
@@ -70,7 +70,8 @@ public class ChatClientForm extends JFrame implements ActionListener, Runnable {
 			
 			try {
 				out.write((msg+"\n").getBytes());
-			} catch (Exception ex) {
+			} catch (Exception ex) {} 
+			finally {
 				tf.setText("");
 				tf.requestFocus();
 			}
