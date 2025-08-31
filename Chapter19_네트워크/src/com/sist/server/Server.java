@@ -28,6 +28,7 @@ import java.net.*;
  * 			3. accept() => vec에 저장
  * 						   thread 생성 => 통신 시작 명령
  * 				 | 전화가 옴 : 발신자 표시
+ * 
  */
 public class Server implements Runnable {
 	// 접속을 담당하는 소켓

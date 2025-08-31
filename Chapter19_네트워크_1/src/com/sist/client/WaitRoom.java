@@ -9,6 +9,7 @@ public class WaitRoom extends JPanel {
 	JTable table1,table2;
 	DefaultTableModel model1,model2;
 	JComboBox<String> box=new JComboBox<String>();
+	JScrollBar bar;
 	public WaitRoom() {
 		String[] col={"방이름","인원","상태"};
 		String[][] row=new String[0][3];
@@ -48,6 +49,8 @@ public class WaitRoom extends JPanel {
 		js3.setBounds(420, 15, 360, 350);
 		add(js3);
 		pane.setEditable(false);
+		
+		bar = js3.getVerticalScrollBar();
 		
 		tf=new JTextField();
 		tf.setBounds(420, 370, 250, 30);

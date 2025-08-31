@@ -11,8 +11,7 @@ public class PostFindForm extends JFrame {
 	public PostFindForm() {
 		tf=new JTextField(13);
 		b1=new JButton("검색");
-		b2=new JButton("취소");
-		String[] col= {"우편번호","주소"};
+		String[] col= {"번호","업체명","주소","음식종류","평점"};
 		String[][] row=new String[0][2];
 		model=new DefaultTableModel(row,col) {
 
@@ -27,14 +26,14 @@ public class PostFindForm extends JFrame {
 		JScrollPane js=new JScrollPane(table);
 		
 		JPanel p=new JPanel();
-		p.add(tf);p.add(b1);p.add(b2);
+		p.add(tf);p.add(b1);
 		
 		add("North",p);
 		add("Center",js);
 		setSize(450, 350);
-//		setVisible(true);
+		setVisible(true);
 	}
-//	public static void main(String[] args) {
-//		new PostFindForm();
-//	}
+	public static void main(String[] args) {
+		new PostFindForm();
+	}
 }
